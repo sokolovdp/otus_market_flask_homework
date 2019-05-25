@@ -18,4 +18,4 @@ def view_home():
 
 if __name__ == '__main__':
     db.init_app(app)
-    app.run(port=8000)
+    app.run('localhost',  port=8000, debug=True)
