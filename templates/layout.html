@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Сокол.Рынок</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='layout.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-default navbar-static-top" role="navigation">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a class='navbar-brand' href="/">Сокол.Рынок</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a class='navbar-link' href="#">Купить</a></li>
+                <li><a class='navbar-link' href="#">Продать</a></li>
+                <li><a class='navbar-link' href="#">Найти</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="jumbotron">
+            {% block body %}
+            {% endblock %}
+        </div>
+    </div>
+</body>
