@@ -16,7 +16,7 @@ def load_initial_data():
         name = fake.word()
         price = fake.pyint()
         description = fake.text(max_nb_chars=300, ext_word_list=None)
-        image_file = f"/static/image_{i}.jpg"
+        image_file = f"image_{i}.jpg"
         item = ItemModel(name, price, description, image_file)
         item.save_to_db()
         print(item)
