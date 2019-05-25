@@ -12,11 +12,11 @@ def load_initial_data():
     fake.add_provider(lorem)
     fake.add_provider(company)
 
-    for i in range(6):
+    for i in range(3):
         name = fake.word()
         price = fake.pyint()
         description = fake.text(max_nb_chars=300, ext_word_list=None)
-        image_file = f"image_({i}).jpg"
+        image_file = f"/static/image_{i}.jpg"
         item = ItemModel(name, price, description, image_file)
         item.save_to_db()
         print(item)
