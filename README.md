@@ -1,7 +1,7 @@
 # Simple Flask site
 
 Site simulation (list and detail view with images) written in Python using Flask, 
-SQLAlchemy and PostgreSQL (or SQLite3) database
+SQLAlchemy and SQLite3 database
 
 # Requirements:
 ```
@@ -15,10 +15,10 @@ Database:
 ```
 
 # Initialization
-Before 1st run, database should be initialized by running **init.py** module. It
+Before 1st run, database should be initialized by running **init_database.py** module. It
 will create table "items" and upload test data 
 ```
-python init.py
+python init_database.py
 ```
 
 # Run site
